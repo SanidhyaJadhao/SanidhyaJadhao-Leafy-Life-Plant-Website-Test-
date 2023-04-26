@@ -2,6 +2,8 @@
 
 This is a simple project that demonstrates the use of Markdown syntax in a `README.md` file.
 
+![This is new Image!](Images/background.jpg)
+
 ## Features
 
 - Easy to read and write
