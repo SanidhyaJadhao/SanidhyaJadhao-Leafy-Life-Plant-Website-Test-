@@ -12,12 +12,12 @@ This website reopsitory is made by Sanidhya P. Jadhao!
 There Are several frameworks that are used in this webste development:
 
 ### GSAP(GreenSock Animation Platform):
-- The first is used GSAP CDN (<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>)To make simple Javascript animations (Syntax in home.js file).
+- The first is used GSAP CDN (https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js)To make simple Javascript animations (Syntax in home.js file).
 
 
 ![Code snapshot of GSAP](SnapShots/GSAP%20Syntax.png)
 
-- The Second is GSAP ScrollTrigger CDN (    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>)To make simple Javascript Scroll Animations (Syntax in home.js file).
+- The Second is GSAP ScrollTrigger CDN (https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js)To make simple Javascript Scroll Animations (Syntax in home.js file).
 
 
 ![Code snapshot of GSAP ScrollTrigger](SnapShots/GSAP%20ScrollTrigger%20Syntax.png)
