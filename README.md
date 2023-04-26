@@ -1,16 +1,22 @@
-# My Project
+# This is the Plant Website
 
-This is a simple project that demonstrates the use of Markdown syntax in a `README.md` file.
+This is a simple website or webpages that are made for web developement practice purposes. It is not intended for production applications and other websites, it's only a sample website that is intended for Practice of web development.
 
-![This is new Image!](Images/background.jpg)
+![It's how the home.html will look like.](Images/screenshot.png)
+This is how the home.html will look like!
 
-## Features
+This website reopsitory is made by Sanidhya P. Jadhao!
 
-- Easy to read and write
-- Lightweight and portable
-- Supports basic formatting, such as headings, lists, and links
+## Frameworks Used
 
-## Installation
+There Are several frameworks that are used in this webste development:
 
-To install the project, simply clone the repository and open the `home.html` file in your web browser.
+### GSAP(GreenSock Animation Platform):
+- The first is used GSAP CDN (<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>)To make simple Javascript animations (Syntax in home.js file).
+![Code snapshot of GSAP](SnapShots/GSAP%20Syntax.png)
 
+- The Second is GSAP ScrollTrigger CDN (    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>)To make simple Javascript Scroll Animations (Syntax in home.js file).
+![Code snapshot of GSAP ScrollTrigger](SnapShots/GSAP%20ScrollTrigger%20Syntax.png)
+
+
+#### Thanks For Reading!
