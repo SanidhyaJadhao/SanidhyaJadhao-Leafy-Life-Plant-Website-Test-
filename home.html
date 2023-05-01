@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../Font Kits/Fonts_stylesheet.css">
     <title>Get Plants</title>
 </head>
-<body>
+<body>  
     <div class="hero">
         <div class="upper">
             <div class="black"></div>
@@ -16,7 +16,7 @@
                 <div class="logo-div">
                     <img src="Images/logo.svg" alt="" class="logo"><p class="logo-text">LeafyLife</p>
                 </div>
-                <button class="sign">Sign Up</button>
+                <a href="signin.html"><button class="sign">Sign Up</button></a>
                 <img src="PNG Files/menu_white_24dp.svg" alt="" class="menu">
             </div>
             <div class="main">
@@ -24,10 +24,20 @@
                 <p class="info-upper">Growing a greener world is not just a goal, it's a necessity.Our planet is facing significant environmental challenges, and we believe that everyone can play a part in creating a more sustainable future.By cultivating green spaces and promoting eco-friendly practices, we can make a positive impact on the world around us.</p>
                 <div class="buttons">
                     <button class="explore">Explore</button>
-                    <button class="sign-main">Sign Up</button>
+                    <a href="signin.html"><button class="sign-main">Sign Up</button></a>
                 </div>
             </div>
-        </div>
+            <div class="menu-div">
+                <p class="back">Back &rarr;</p>
+                <input type="text" placeholder="Search Anything..." onkeyup="search()" class="search" style="color : white;font-size : 15px">
+                <ul class="myMenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="aboutus"><a href="aboutus.html">About Us..</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="products.html">Products</a></li>   
+                    <li><a href="signin.html">Sign In..</a></li>  
+                  </ul>
+            </div>
         <div class="middle">
             <div class="life">
                     <h2>Bringing life to <br>your home</h2>
@@ -81,13 +91,89 @@
                         <p class="pbg-para2">A plant-based diet is a rich source of essential vitamins and minerals that your body needs to function at its best. From vitamin C in citrus fruits to calcium in leafy greens, plant-based foods provide a diverse range of nutrients that support your immune system, boost your energy levels, and promote healthy bones and muscles.</p>
                 </div>
                 <div class="bcontent2">
-                    
+                    <h6><span4>MODER</span4><br>N<br>SOLUTIONS</h6>
+                    <div class="bc2">
+                        <img src="Images/jacalyn-beales-w_Ias5zrVsQ-unsplash.jpg" alt="" class="bc2-img">
+                        <div class="bc2-text">
+                            <p class="bc2-text-head">Acheiving it with<br> Leafy Life</p>
+                            <p class="bc2-text-para">They are committed to sustainable and eco-friendly farming practices, and strive to bring fresh, healthy food to their customers.</p>
+                            <button class="bc2-text-btn">Explore The Blog &rarr;</button>
+                            <div class="btn-line-u"></div>
+                        </div>
+                    </div>
+                    <h7>Moving Forward With<br>Our Instructors</h7>
+                    <div class="slider-container">
+                        <div class="slider">
+                          <div class="slide" data-creator="John Doe">
+                            <img src="Instructure Img/img1.jpg" alt="Staff 1">
+                            <h2>John Doe</h2>
+                            <p class="ins-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                          <div class="slide" data-creator="Whellier Smith">
+                            <img src="Instructure Img/img2.jpg" alt="Staff 2">
+                            <h2>Whellier Smith</h2>
+                            <p class="ins-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo urna et orci rhoncus, vel semper velit bibendum.</p>
+                          </div>
+                          <div class="slide" data-creator="Bob Johnson">
+                            <img src="Instructure Img/img3.jpg" alt="Staff 3">
+                            <h2>Bob Johnson</h2>
+                            <p class="ins-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo urna et orci rhoncus, vel semper velit bibendum. Fusce euismod lorem eget odio feugiat, vitae commodo arcu feugiat.</p>
+                          </div>
+                        </div>
+                        <a class="prev" onclick="prevSlide()">&#10094;</a>
+                        <a class="next" onclick="nextSlide()">&#10095;</a>
+                        <button class="view-creator">View Creator &rarr;</button>
+                        <div class="btn-line-u2"></div>
+                      </div>                      
+                <h8>Learn how to get started.</h8>
+                <!-- <div class="tags-div">
+                    <p class="tags">Growing a greenerWorld</p>
+                    <p class="tags">Bringing life toyour home</p>
+                    <p class="tags">A paradise for plant lovers</p>
+                    <p class="tags">Cannabis made simple with Leaflylife</p>
+                    <p class="tags"> THE WORLD OF GRENERRY</p>
+                    <p class="tags">Plant-Based Goodness</p>
+                    <p class="tags">MODERN SOLUTIONS</p>
+                    <p class="tags">Moving Forward With Our Instructors</p>
+                </div>     -->
+                <img src="Images/planting-a-tree-img.jpg" alt="" class="plant-tree-img">
+                <div class="plant-tree-div">
+                    <p class="plant-tree-steps"><a href="https://www.google.com/search?q=how+to+grow+a+tree&oq=how+to+grow+a+tree&aqs=chrome..69i57j0i512l9.8257j0j7&sourceid=chrome&ie=UTF-8">Choose the right location <span5>&rarr;</span5></a></p>
+                    <p class="plant-tree-steps"><a href="https://www.google.com/search?q=how+to+grow+a+tree&oq=how+to+grow+a+tree&aqs=chrome..69i57j0i512l9.8257j0j7&sourceid=chrome&ie=UTF-8">Prepare the soil <span5>&rarr;</span5></p></a>
+                    <p class="plant-tree-steps"><a href="https://www.google.com/search?q=how+to+grow+a+tree&oq=how+to+grow+a+tree&aqs=chrome..69i57j0i512l9.8257j0j7&sourceid=chrome&ie=UTF-8">Remove the tree from the container <span5>&rarr;</span5></p></a>
+                    <p class="plant-tree-steps"><a href="https://www.google.com/search?q=how+to+grow+a+tree&oq=how+to+grow+a+tree&aqs=chrome..69i57j0i512l9.8257j0j7&sourceid=chrome&ie=UTF-8">Place the tree in the hole <span5>&rarr;</span5></p></a>
+                    <p class="plant-tree-steps"><a href="https://www.google.com/search?q=how+to+grow+a+tree&oq=how+to+grow+a+tree&aqs=chrome..69i57j0i512l9.8257j0j7&sourceid=chrome&ie=UTF-8">Fill the hole with soil <span5>&rarr;</span5></p></a>
+                    <p class="plant-tree-steps"><a href="https://www.google.com/search?q=how+to+grow+a+tree&oq=how+to+grow+a+tree&aqs=chrome..69i57j0i512l9.8257j0j7&sourceid=chrome&ie=UTF-8">Water the tree <span5>&rarr;</span5></p></a>
+                    <p class="plant-tree-steps"><a href="https://www.google.com/search?q=how+to+grow+a+tree&oq=how+to+grow+a+tree&aqs=chrome..69i57j0i512l9.8257j0j7&sourceid=chrome&ie=UTF-8">Care For It <span5>&rarr;</span5></p></a>
                 </div>
+                <p class="dyk">Did You Know?</p>
+                    <h9>40% Reduction!</h9>
+                    <p class="reduction-para">Leafy life, a company dedicated to creating sustainable and eco-friendly solutions, has made a significant impact in reducing the destruction of plants. Through their efforts, they have achieved a 40% reduction in plant destruction. </p>
+                    <button class="see-more2">See More</button>
+                    <img src="Images/Reduction_.png" class="reduction-img"></img>
+                    <div class="outer">
+                        <img src="Images/ceyda-ciftci-dDVU6D_6T80-unsplash.jpg" alt="" class="outer-img">
+                        <h10>Start A <br>Free Trail Today!</h10>
+                        <p class="outer-para">No credit card required.<br>Sign Up To Continue.</p>
+                        <button class="outer-btn">GET STARTED</button>
+                        <p class="social-head">Follow On Other Social Medias!</p>
+                        <div class="social-medias">
+                            <img src="../Materials/Social Media Icons/Whit Icons/facebook.png" alt="" class="social-icon">
+                            <img src="../Materials/Social Media Icons/Whit Icons/insta.png" alt="" class="social-icon">
+                            <img src="../Materials/Social Media Icons/Whit Icons/youtube.png" alt="" class="social-icon yt">
+                            <img src="../Materials/Social Media Icons/Whit Icons/twitter.png" alt="" class="social-icon">
+                        </div>
+                        <div class="outer-line"></div><div class="verticle-line"></div>
+                        <div class="logo-div2">
+                            <img src="Images/logo.svg" alt="" class="logo2"><p class="logo-text2">LeafyLife</p>
+                            <p class="copyright">Copyright @ 2023 . All Rights Reserved</p>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="Js Files/homejs"></script>
+    <script src="Js Files/home.js"></script>
 </body>
 </html>

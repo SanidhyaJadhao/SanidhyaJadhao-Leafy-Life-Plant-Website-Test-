@@ -1,140 +1,89 @@
-gsap.registerPlugin(ScrollTrigger);
 
-const container = document.querySelector('.life');
-const textElements = container.querySelectorAll('h2, .life-para, .explore2');
-
-// Create a timeline that targets the container and its text elements
-const tl = gsap.timeline({paused: true});
-
-// Fade in the container with a delay of 0.5 seconds
-tl.fromTo(container, { opacity: 0 }, { opacity: 1, delay: 0.5 });
-
-// Fade in each text element with a stagger of 0.2 seconds
-tl.staggerFromTo(textElements, 0.5, { opacity: 0, x: -20 }, { opacity: 1, x: 0 }, 0.2);
-
-// Add a scroll trigger to the container that plays the timeline when it enters the viewport
-ScrollTrigger.create({
-  trigger: container,
-  start: 'top 80%',
-  end : 'bottom 50%',
-  onEnter: () => tl.play(),
-  toggleActions : 'play none none reverse',
-});
-
-
-gsap.fromTo(".life-img",{
-    opacity : 0,
-    y : 30,
- },{
-    opacity : 1,
-    y : 0,
-    duration : 0.5,
-    ease : Power2.easeInOut,
-    scrollTrigger : {
-     trigger : ".life-img",
-     start : 'top 50%',
-     toggleActions : 'play none none reverse',
-     end : 'bottom 50%',
-
+  var slider = document.querySelector(".slider");
+  var slides = slider.querySelectorAll(".slide");
+  
+  // Set the current slide index to 0
+  var currentSlide = 0;
+  
+  // Define the functions to show the previous and next slide
+  function prevSlide() {
+    // Decrement the current slide index
+    currentSlide--;
+  
+    // If the current slide index is less than 0, wrap around to the last slide
+    if (currentSlide < 0) {
+      currentSlide = slides.length - 1;
     }
- });
-
- const plover = document.querySelectorAll('h3, .plover-para');
-
- plover.forEach(function(plover) {
-    gsap.fromTo(plover,{
-       opacity : 0,
-       y : 30,
-    },{
-       opacity : 1,
-       y : 0,
-       duration : 0.5,
-       stagger : 0.1,
-       ease : Power2.easeInOut,
-       scrollTrigger: {
-        trigger: plover,
-        start: 'top 50%', // adjust this value as needed
-        end: 'bottom 50%',
-        toggleActions : 'play none none reverse',
-      }
-    });
-});
-
-const vid = document.querySelectorAll('video');
-
-vid.forEach(function(vid) {
-    gsap.fromTo(vid,{
-       opacity : 0,
-       y : 30,
-    },{
-       opacity : 1,
-       y : 0,
-       duration : 0.5,
-       stagger : 0.3,
-       ease : Power2.easeInOut,
-       scrollTrigger : {
-        trigger : vid,
-        start : 'top 50%',
-        end : 'bottom 50%',
-    
-        toggleActions : 'play none none reverse',
-       }
-    });
-});
-
-const container2 = document.querySelector('.no-text');
-const textElements2 = container2.querySelectorAll('.no-div');
-
-// Create a timeline that targets the container2 and its text elements
-const tl2 = gsap.timeline({paused: true});
-
-// Fade in the container2 with a delay of 0.5 seconds
-tl2.fromTo(container2, { opacity: 0 }, { opacity: 1, delay: 0.5 });
-
-// Fade in each text element with a stagger of 0.2 seconds
-tl2.staggerFromTo(textElements2, 0.5, { opacity: 0, y: 20 }, { opacity: 1, y: 0 }, 0.2);
-
-// Add a scroll trigger to the container2 that plays the timeline when it enters the viewport
-ScrollTrigger.create({
-  trigger: container2,
-  start: 'top 50%',
-  end : 'bottom 60%',
-  toggleActions : 'play none none reverse',
-  onEnter: () => tl2.play(),
-});
-
-gsap.fromTo("h4",{
-    opacity : 0,
-    y : 30,
- },{
-    opacity : 1,
-    y : 0,
-    duration : 0.5,
-    stagger : 0.1,
-    ease : Power2.easeInOut,
-    scrollTrigger : {
-     trigger : "h4",
-     start : 'top 50%',
-     end : 'bottom 50%',
-     toggleActions : 'play none none reverse',
-
+  
+    // Show the current slide
+    showSlide(currentSlide);
+  }
+  
+  function nextSlide() {
+    // Increment the current slide index
+    currentSlide++;
+  
+    // If the current slide index is greater than the number of slides, wrap around to the first slide
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
     }
- });
+  
+    // Show the current slide
+    showSlide(currentSlide);
+  }
+  
+  // Define a function to show a slide
+  function showSlide(index) {
+    // Hide all the slides
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+  
+    // Show the slide with the given index
+    slides[index].style.display = "block";
+  }
+  
+  // Add a click handler for the "View Creator" button
+  var viewCreatorButton = document.querySelector(".view-creator");
+  viewCreatorButton.addEventListener("click", function() {
+    // Get the creator name or ID of the current slide
+    var currentSlideCreator = slides[currentSlide].getAttribute("data-creator");
+  });  
+   
+  
 
-    gsap.fromTo(".no-img",{
-       opacity : 0,
-       x : -30,
-    },{
-       opacity : 1,
-       x : 0,
-       duration : 0.5,
-       stagger : 0.1,
-       ease : Power2.easeInOut,
-       scrollTrigger : {
-        trigger : ".no-img",
-        start : 'top 50%',
-        end : 'bottom 50%',
-        toggleActions : 'play none none reverse',
-    
-       }
-    });
+function search() {
+  var input, filter, ul, li, a, i;
+  input = document.querySelector(".search");
+  filter = input.value.toUpperCase();
+  ul = document.querySelector('.myMenu');
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+};
+
+const back = document.querySelector(".back");
+const menu = document.querySelector('.menu');
+const menudiv = document.querySelector(".menu-div");
+
+back.addEventListener('click',function(){
+  gsap.to(".menu-div",{
+    x : '40%',
+    duration : 1,
+    delay : 0
+  });
+});
+
+menu.addEventListener('click',function(){
+  gsap.to(".menu-div",{
+    x : '-40%',
+    duration : 1,
+    delay : 0,
+  })
+})
