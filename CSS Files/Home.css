@@ -20,6 +20,9 @@
 body{
     overflow-x:hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 .black{
     height: 100%;
     width: 100%;
@@ -187,10 +190,10 @@ h1{
     border: 1px solid;
     border-color: var(--white);
     color: var(--white);
-    width: 40%;
+    width: 110%;
     border-radius: 3px;
     transition: 0.3s;
-    padding: 0px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -204,10 +207,10 @@ h1{
     border: 1px solid;
     border-color: var(--white);
     color: var(--white);
-    width: 40%;
+    width: 110%;
     border-radius: 3px;
     transition: 0.3s;
-    padding: 0px 10px;
+    padding: 5px 10px;
     cursor: pointer;
 }
 .explore:hover{
@@ -668,7 +671,7 @@ h7{
 }
 .plant-tree-div{
     position: absolute;
-    top: 118.5%;
+    top: 60%;
     right: 0%;
     width: 60%;
     min-height: auto;
@@ -692,7 +695,7 @@ h7{
 .dyk{
     position: absolute;
     left: 4%;
-    top: 136.5%;
+    top: 53%;
     border: 1px black solid;
     border-radius: 20px;
     padding: 5px 15px;
@@ -702,12 +705,12 @@ h9{
     font-size: 5rem;
     left: 4%;
     position: absolute;
-    top: 138%;
+    top: 55%;
 }
 .reduction-para{
     position: absolute;
     width: 50%;
-    top: 142%;
+    top: 60%;
     left: 4%;
 }
 .see-more2{
@@ -722,7 +725,7 @@ h9{
     padding: 0px 10px;
     position: absolute;
     left: 4%;
-    top: 146%;
+    top: 65%;
     cursor: pointer;
     transition : 0.5s
 }
@@ -734,14 +737,14 @@ h9{
 .reduction-img{
     right: -15%;
     position: absolute;
-    top: 136%;
+    top: 53%;
 }
 .outer{
     background-color: var(--mallet);
     width: 100%;
     height: 20%;
     position: absolute;
-    bottom: -70%;
+    top: 70%;
     left: 0;
 }
 .outer-img{

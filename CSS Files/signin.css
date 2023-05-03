@@ -175,3 +175,40 @@ h2{
     width: 30%;
     z-index: 3;
 }
+@media screen and (max-width: 600px){
+    html{
+        overflow-y: scroll;
+    }
+    .left-img{
+        height: 50%;
+        width: 100%;
+    }
+    .black{
+        height: 50%;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2rem;
+        right: 30%;
+        top: 5%;
+    }
+    .h2-down{
+        position: absolute;
+        top: 13%;
+        width: 60%;
+        text-align: right;
+        right: 30%;
+    }
+    .line{
+        position: absolute;
+        left: 5%;
+        width: 80%;
+        top: 23%;
+    }
+    .h2-bottom-head{
+        position: absolute;
+        right: 30%;
+        top: 50%;
+    }
+}
